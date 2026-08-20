@@ -40,7 +40,7 @@ df = pd.DataFrame({
 })
 
 if st.button('Predict'):
-    model = joblib.load('model.pkl')
+    model = joblib.load('wine_type_prediction.pkl')
     prediction = model.predict(df)[0]
     if prediction == 0:
         prediction = 'red Wine'
