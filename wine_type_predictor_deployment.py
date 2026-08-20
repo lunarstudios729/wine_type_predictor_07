@@ -10,7 +10,7 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 import joblib
-
+model = joblib.load("wine_type_prediction.pkl")
 fixed_acidity = st.number_input("Fixed Acidity")
 volatile_acidity = st.number_input("Volatile Acidity")
 citric_acid = st.number_input("Citric Acid")
